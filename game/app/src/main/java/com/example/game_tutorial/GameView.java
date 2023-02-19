@@ -1,6 +1,7 @@
 package com.example.game_tutorial;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.view.View;
 import androidx.annotation.NonNull;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+
+    private MainThread thread;
     public GameView(Context context) {
         super(context);
 
@@ -46,4 +49,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     public void update() {
 
     }
+
+//    @Override
+//    public void draw(Canvas canvas) {
+//        super.draw(canvas);
+//
+//    }
 }
